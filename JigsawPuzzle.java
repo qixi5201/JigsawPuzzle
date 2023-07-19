@@ -79,11 +79,11 @@ public class project_1 extends Application {//主要程式碼
     ImageView[] imageViews = new ImageView[9];
     private Sound sound;
     public void start(Stage primaryStage)throws Exception {
-        sound = new Sound("file:///C://Users//hyyan//Downloads/1.mp3", false);//使用URL讀取本機的檔案
+        sound = new Sound("file:///", false);//使用URL讀取本機的檔案
 	 sound.loop();//開始撥放音樂
         
         GridPane pane = new GridPane();
-        Image image2 = new Image("File:C:\\Users\\hyyan\\Downloads/test.jpg");
+        Image image2 = new Image("File:");
         for (int i = 0; i < 9; i++) {
             imageViews[i] = new ImageView(image2);
             imageViews[i].setOnMouseClicked(new myevent());
